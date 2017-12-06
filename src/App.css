@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body{background-color:#f9f9f9}.card{background-color:#fff}.card__logo{border-bottom:1px solid #cecece}.card__label{list-style:none}.card__label li{display:block;float:left;width:50%;border:1px solid yellow}.navbar{background-color:#11BEBE;color:#fff;display:block}.navbar .navbar-brand{color:#fff}
+
+.header-logo {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.card {
+  display: block;
+}
+
+.card-img-top {
+    height: 60px !important;
+    width: auto;
+    max-width: 168px;
+}
+
+.delete-button {
+  position: absolute;
+  right: 15px;
+}
+
+.button-facebook  {
+  width: 100%;
+  background-color: #4267b2;
+  color: white;
+}
+
+.button-github {
+  width: 100%;
+  background-color: #35d259;
+  color: white;
+}
+
+.login-nav {
+  background-color: #ebf1f3;;
+}
+
+@media (min-width: 768px) { 
+  .login-bar {
+    width: 50%;
+  }
+}
+
+.button-login {
+
+}
