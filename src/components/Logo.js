@@ -10,6 +10,11 @@ class Logo extends React.Component {
     }
 
     render() {
+        let editLogo = <p><a href="#" onClick={(e) => this.removeLogo(e)}><img className="delete-button" src={icon} width="20" alt=""/></a></p>
+
+        if(!this.props.isUserLoggedIn()) {
+            editLogo = ''
+        }
 
         return(
             <div className="col-6 col-md-3 mt-4">
@@ -20,7 +25,9 @@ class Logo extends React.Component {
                     </div>
                     <div className="card-footer">
                         <small className="text-muted">{this.props.details.name}</small>
-                       <p><a href="#" onClick={(e) => this.removeLogo(e)}><img className="delete-button" src={icon} width="20" alt=""/></a></p>
+
+                        {/* IF user is logged in show delete button*/}
+                        {editLogo}
                     </div>
                 </div>
             </div>

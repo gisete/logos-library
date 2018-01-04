@@ -60,11 +60,11 @@ class AddLogoForm extends React.Component {
            <div className="container-fluid py-5 login-nav">
                 <h5>Sign in to edit logos</h5>
                 <div className="row login-bar mx-auto mt-4">
-                    <div className="col-6 mb-2">
+                    <div className="col-12 mb-2">
                         <button className="btn button-github" onClick={() => this.authenticate(new firebase.auth.GithubAuthProvider())}>Login In with Github</button>
                     </div>
                     
-                    <div className="col-6">
+                    <div className="col-12">
                         <button className="btn button-facebook" onClick={() => this.authenticate(new firebase.auth.FacebookAuthProvider())}>Login In with Facebook</button>
                     </div>
                 </div>

@@ -47,13 +47,13 @@ body{background-color:#f9f9f9}.card{background-color:#fff}.card__logo{border-bot
 }
 
 .button-facebook  {
-  width: 100%;
+  width: 300px;
   background-color: #4267b2;
   color: white;
 }
 
 .button-github {
-  width: 100%;
+  width: 300px;
   background-color: #35d259;
   color: white;
 }
