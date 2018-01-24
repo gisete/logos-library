@@ -1,6 +1,7 @@
 import React from 'react';
 import icon from '../assets/icon-trash.svg';
 import { app } from '../base';
+import PropTypes from 'prop-types';
 
 class Logo extends React.Component {
 
@@ -13,7 +14,7 @@ class Logo extends React.Component {
         let editLogo = <p><a href="#" onClick={(e) => this.removeLogo(e)}><img className="delete-button" src={icon} width="20" alt=""/></a></p>
 
         if(!this.props.isUserLoggedIn()) {
-            editLogo = ''
+            editLogo = '';
         }
 
         return(
@@ -33,6 +34,12 @@ class Logo extends React.Component {
             </div>
         )
     }
+}
+
+Logo.propTypes =  {
+    removeLogo: PropTypes.func,
+    isUserLoggedIn: PropTypes.func,
+    details: PropTypes.object
 }
 
 export default Logo;

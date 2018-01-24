@@ -1,6 +1,7 @@
 import React from 'react';
 import firebase from 'firebase';
 import { app } from '../base';
+import PropTypes from 'prop-types';
 
 class AddLogoForm extends React.Component {
     constructor() {
@@ -111,6 +112,13 @@ class AddLogoForm extends React.Component {
             </div>
         )
     }
+}
+
+AddLogoForm.propTypes =  {
+    AddLogoForm: PropTypes.func,
+    isUserLoggedIn: PropTypes.func,
+    addLogo: PropTypes.func,
+    userLoggedIn: PropTypes.func
 }
 
 export default AddLogoForm;
